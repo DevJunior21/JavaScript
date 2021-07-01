@@ -47,22 +47,24 @@
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
- Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
- Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
- Crie uma função que mude a cor do quadrado vermelho para branco.
- Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+        Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+        Crie uma função que mude a cor do quadrado vermelho para branco.
+        Crie uma função que corrija o texto da tag <h1>.
+        Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
        function x (){
          x = document.getElementsByTagName('p')[1]
          x.innerText = "Me vejo como estou hoje, no processo de aprendizado, mas no exterior e em uma grande empresa!!"
+         
        }
        x();
 
        function mudarcor (){
          let cormuada = document.getElementsByClassName("main-content")[0]
          cormuada.style.background = 'rgb(76,164,109)   '
+         
        }
        mudarcor();
 
@@ -71,6 +73,30 @@
          cormuda.style.background = 'rgb(255,255,255)'
        }
        corred();
+
+       function correcao(){
+         let correct = document.getElementsByTagName("h1")[0]
+         correct.innerText = "Exercício 5.1 - JavaScript"
+       }
+       correcao();
+       
+       function maiuscul(){
+        let kk = document.getElementsByTagName('p')[0]
+        kk.innerHTML = kk.innerHTML.toUpperCase()
+        
+       }
+       maiuscul();
+
+       function mostrar(){
+         let paragrafos = document.getElementsByTagName('p');
+         for(let index = 0; index < paragrafos.length; index += 1){
+           console.log(paragrafos[index].innerHTML)
+
+         }
+       }
+       mostrar();
+
+      
     </script>
   </body>
 </html>

@@ -1,6 +1,8 @@
-let h1 = document.createElement('h1') // Passo 1    
+let h1 = document.createElement('h1')// Passo 1    
 document.body.appendChild(h1)
-h1.innerText = ('Exercicio 5.2 - JavaScript DOM')
+
+
+h1.innerText = ('TUca é gostoso')
 
 let mainContent = document.createElement('div')   // Passo 2 
 mainContent.classList.add('mainContent')
